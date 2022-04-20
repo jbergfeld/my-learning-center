@@ -1,13 +1,23 @@
 apiVersion: training.eduk8s.io/v1alpha1
 kind: TrainingPortal
 metadata:
-  name: lab-markdown-sample
+  name: learning-center-guided
 spec:
   portal:
+    ingress:
+      hostname: learning-center-guided
     registration:
       type: anonymous
+    reserved: 0
+    sessions:
+      maximum: 10
+    updates:
+      workshop: true
   workshops:
-  - name: lab-markdown-sample
+  - name: lab-et-self-guided-tour
+    expires: 30m
+    orphaned: 10m
+  - name: my-learning-center
     capacity: 1
     expires: 60m
     orphaned: 5m

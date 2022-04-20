@@ -1,17 +1,17 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: my-learning-center
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
+  title: My Learning Center
+  description: My first Learning Center module.
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/eduk8s/lab-markdown-sample
+  url: https://github.com/jbergfeld/my-learning-center
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/eduk8s/lab-markdown-sample
+    #image: jbergfeld/my-learning-center:master
+    files: github.com/jbergfeld/my-learning-center
   session:
     namespaces:
       budget: small
